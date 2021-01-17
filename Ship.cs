@@ -20,7 +20,7 @@ namespace BattleSpace
             IsDestroyed = false;
         }
 
-        public void Hit(int damage)
+        public void TakeDamage(int damage)
         {
             HealthPoints -= damage;
 
@@ -30,10 +30,10 @@ namespace BattleSpace
             }
         }
 
-        public abstract int Fire();
+        // Chooses Weapon and returns Damage of the weapon
+        public abstract int WeaponPicker();
 
         public string FiredWeapon { get; set; }
-        
 
     }
 }

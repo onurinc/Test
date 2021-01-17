@@ -19,7 +19,7 @@ namespace BattleSpace
             SuperCannonballAmmo = 1;
         }
 
-        public override int Fire()
+        public override int WeaponPicker()
         {
             Random rand = new Random();
             int weapon = rand.Next(300);

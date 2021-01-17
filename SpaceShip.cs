@@ -12,7 +12,7 @@ namespace BattleSpace
         {
         }
 
-        public abstract override int Fire();
+        public abstract override int WeaponPicker();
 
         public override string ToString()
         {

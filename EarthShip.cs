@@ -10,10 +10,9 @@ namespace BattleSpace
 
         public EarthShip(string name, int health) : base(Prefix + name, health)
         {
-
         }
 
-        public abstract override int Fire();
+        public abstract override int WeaponPicker();
 
         public override string ToString()
         {
